@@ -4,7 +4,6 @@
     <% if @news[i] != nil %>
         <img src="<%= @news[i].image %>" alt="Image">
         <h2><%= link_to @news[i].headline, @news[i].link %></h2>
-        <h2><%= @news[i].headline %></h2>
         <h3><%= @news[i].description %></h3>
         <h5>Source: <%= @news[i].source %></h5>
         <h5>Published: <%= @news[i].datetime %></h5>

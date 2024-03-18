@@ -1729,3 +1729,195 @@ ActionView::Template::Error (undefined method `news_path' for #<ActionView::Base
    10:           <%= submit_tag "Search", class: "btn btn-primary" %>
   
 app/views/welcome/index.html.erb:7
+Started GET "/" for ::1 at 2024-03-18 00:38:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 106.6ms | Allocations: 95496)
+Completed 200 OK in 115ms (Views: 108.2ms | ActiveRecord: 0.0ms | Allocations: 99585)
+
+
+Started GET "/" for ::1 at 2024-03-18 00:38:38 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1623)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1713)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2617)
+
+
+  
+ActionView::Template::Error (undefined method `news_path' for #<ActionView::Base:0x0000000000ddb8>):
+    4:   </div>
+    5:   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    6:     <ul class="nav navbar-nav">
+    7:       <%= form_tag :news, method: :get, class: "form-inline" do %>
+    8:         <div class="form-group search-field">
+    9:           <%= text_field_tag(:q) %>
+   10:           <%= submit_tag "Search", class: "btn btn-primary" %>
+  
+app/views/welcome/index.html.erb:7
+Started GET "/" for ::1 at 2024-03-18 00:42:07 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1068)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1157)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1388)
+
+
+  
+ActionView::Template::Error (undefined method `news_path' for #<ActionView::Base:0x0000000000e128>):
+    4:   </div>
+    5:   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    6:     <ul class="nav navbar-nav">
+    7:       <%= form_tag :news, method: :get, class: "form-inline" do %>
+    8:         <div class="form-group search-field">
+    9:           <%= text_field_tag(:q) %>
+   10:           <%= submit_tag "Search", class: "btn btn-primary" %>
+  
+app/views/welcome/index.html.erb:7
+Started GET "/foods?q=sweet+potatoes&commit=Search" for ::1 at 2024-03-18 00:44:05 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/foods"):
+  
+Started GET "/" for ::1 at 2024-03-18 00:44:08 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1188)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1290)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3062)
+
+
+  
+ActionView::Template::Error (undefined method `news_path' for #<ActionView::Base:0x0000000000aca8>):
+    1: <%= form_tag :news, method: :get, class: "form-inline" do %>
+    2:   <div class="form-group search-field">
+    3:     <%= text_field_tag(:q) %>
+    4:     <%= submit_tag "Search", class: "btn btn-primary" %>
+  
+app/views/welcome/index.html.erb:1
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 00:44:24 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+Completed 500 Internal Server Error in 573ms (ActiveRecord: 0.0ms | Allocations: 2290)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/facades/news_facade.rb:9:in `block in search'
+app/facades/news_facade.rb:8:in `times'
+app/facades/news_facade.rb:8:in `search'
+app/controllers/news_controller.rb:4:in `index'
+Started POST "/__web_console/repl_sessions/b1a240664f234fc4bd5e93a4b76a3a63/trace" for ::1 at 2024-03-18 00:45:00 -0600
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 00:46:12 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 00:48:00 -0600
+Completed 500 Internal Server Error in 112766ms (ActiveRecord: 0.0ms | Allocations: 24979)
+
+
+  
+SystemExit (exit):
+  
+app/facades/news_facade.rb:9:in `block in search'
+app/facades/news_facade.rb:8:in `times'
+app/facades/news_facade.rb:8:in `search'
+app/controllers/news_controller.rb:4:in `index'
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2766ms (ActiveRecord: 0.0ms | Allocations: 13591)
+
+
+  
+SystemExit (exit):
+  
+app/facades/news_facade.rb:9:in `block in search'
+app/facades/news_facade.rb:8:in `times'
+app/facades/news_facade.rb:8:in `search'
+app/controllers/news_controller.rb:4:in `index'
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 00:48:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 35000)
+Completed 200 OK in 296ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 41220)
+
+
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 00:48:53 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 35062)
+Completed 200 OK in 475ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 41220)
+
+
+Started GET "/" for ::1 at 2024-03-18 00:48:57 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1525)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1614)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2068)
+
+
+  
+ActionView::Template::Error (undefined method `news_path' for #<ActionView::Base:0x0000000000aca8>):
+    1: <%= form_tag :news, method: :get, class: "form-inline" do %>
+    2:   <div class="form-group search-field">
+    3:     <%= text_field_tag(:q) %>
+    4:     <%= submit_tag "Search", class: "btn btn-primary" %>
+  
+app/views/welcome/index.html.erb:1
+Started POST "/__web_console/repl_sessions/e7ceb70aa86bd7a761f8a58130339083/trace" for ::1 at 2024-03-18 00:49:23 -0600
+Started GET "/news?q=iterate.ai&commit=Search" for ::1 at 2024-03-18 03:35:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 34923)
+Completed 200 OK in 565ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 41040)
+
+
+Started GET "/" for ::1 at 2024-03-18 03:35:22 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2414)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3736)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 4193)
+
+
+Started GET "/news?commit=Search&q=sweet+potatoes&commit=Submit" for ::1 at 2024-03-18 03:35:26 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"sweet potatoes"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1422)
+Completed 200 OK in 724ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3817)
+
+
+Started GET "/news?commit=Search&q=among+us&commit=Submit" for ::1 at 2024-03-18 03:35:53 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"among us"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1429)
+Completed 200 OK in 628ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3824)
+
+
