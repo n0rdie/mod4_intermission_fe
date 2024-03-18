@@ -1,0 +1,183 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/spec/features/news_index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/spec/poros/article_poro_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/app/poros/article_poro.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/app/facades/news_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          null,
+          4,
+          4,
+          40,
+          12,
+          null,
+          null,
+          null,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/app/services/news_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/app/controllers/news_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          null,
+          3,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/quinnordmark/Desktop/Turing/4mod/intermission/mod4_intermission_fe/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1710758956
+  }
+}
