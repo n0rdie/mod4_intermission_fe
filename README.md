@@ -14,5 +14,5 @@ This project consumes https://newsapi.org
 `bundle exec rspec`
 - `news_facade_spec`
 - `artical_poro_spec`
-- `news_index_spec` (many)
-- `news_index_spec` (one)
+- `news_index_spec` (many articles)
+- `news_index_spec` (one article)
