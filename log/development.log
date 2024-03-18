@@ -1921,3 +1921,131 @@ Processing by NewsController#index as HTML
 Completed 200 OK in 628ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3824)
 
 
+Started GET "/news?commit=Search&q=among+us&commit=Submit" for ::1 at 2024-03-18 04:16:49 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"among us"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1699)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1823)
+Completed 500 Internal Server Error in 916ms (ActiveRecord: 0.0ms | Allocations: 9040)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_path' for #<ActionView::Base:0x0000000000a8e8>):
+    1: <h5><%= current_path %></h5>
+    2: <h1><%= @input %></h1>
+    3: <h5><%= @news.count %> results</h5>
+    4: <% for i in 0..9 do %>
+  
+app/views/news/index.html.erb:1
+Started GET "/news?commit=Search&q=among+us&commit=Submit" for ::1 at 2024-03-18 04:16:50 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"among us"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1084)
+Completed 500 Internal Server Error in 378ms (ActiveRecord: 0.0ms | Allocations: 3542)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_path' for #<ActionView::Base:0x0000000000aca8>):
+    1: <h5><%= current_path %></h5>
+    2: <h1><%= @input %></h1>
+    3: <h5><%= @news.count %> results</h5>
+    4: <% for i in 0..9 do %>
+  
+app/views/news/index.html.erb:1
+Started GET "/news?commit=Search&q=among+us&commit=Submit" for ::1 at 2024-03-18 04:17:51 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"among us"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 481)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 33767)
+Completed 200 OK in 610ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 37108)
+
+
+Started GET "/" for ::1 at 2024-03-18 04:23:24 -0600
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2152)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 17196)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 18102)
+
+
+Started GET "/news?commit=Search&q=cheese+burger&commit=Submit" for ::1 at 2024-03-18 04:23:42 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"cheese burger"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1802)
+Completed 200 OK in 1275ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4615)
+
+
+Started GET "/news?commit=Search&q=cheese+burger&commit=Submit&i=0" for ::1 at 2024-03-18 04:23:46 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"cheese burger", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1087)
+Completed 500 Internal Server Error in 529ms (ActiveRecord: 0.0ms | Allocations: 3492)
+
+
+  
+ActionView::Template::Error (no implicit conversion from nil to integer):
+    11:         <% end %>
+    12:     <% end %>
+    13: <% else %>
+    14:     <img src="<%= @news[i].image %>" alt="Image">
+    15:     <h2><%= link_to @news[i].headline, @news[i].link %></h2>
+    16:     <h5>Source: <%= @news[i].source %></h5>
+    17:     <h5>Published: <%= @news[i].datetime %></h5>
+  
+app/views/news/index.html.erb:14
+Started GET "/news?commit=Search&q=cheese+burger&commit=Submit&i=0" for ::1 at 2024-03-18 04:24:11 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"cheese burger", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1372)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms | Allocations: 4606)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    11:         <% end %>
+    12:     <% end %>
+    13: <% else %>
+    14:     <img src="<%= @news[@i].image %>" alt="Image">
+    15:     <h2><%= link_to @news[@i].headline, @news[@i].link %></h2>
+    16:     <h5>Source: <%= @news[@i].source %></h5>
+    17:     <h5>Published: <%= @news[@i].datetime %></h5>
+  
+app/views/news/index.html.erb:14
+Started GET "/news?commit=Search&q=cheese+burger&commit=Submit&i=0" for ::1 at 2024-03-18 04:24:26 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"cheese burger", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 15576)
+Completed 200 OK in 625ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 18821)
+
+
+Started GET "/news?commit=Search&q=cheese+burger&commit=Submit" for ::1 at 2024-03-18 04:29:41 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"commit"=>"Submit", "q"=>"cheese burger"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 515)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 15722)
+Completed 200 OK in 862ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 18952)
+
+

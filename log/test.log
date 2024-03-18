@@ -332,3 +332,115 @@ Completed 200 OK in 49ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 377
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search" for 127.0.0.1 at 2024-03-18 04:32:28 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2443)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:32:28 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1478)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search" for 127.0.0.1 at 2024-03-18 04:33:51 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 578)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 32252)
+Completed 200 OK in 48ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 37340)
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:33:51 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 0.2ms | Allocations: 653)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1943)
+  [1m[36mTRANSACTION (52.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search" for 127.0.0.1 at 2024-03-18 04:34:17 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 578)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 32224)
+Completed 200 OK in 46ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 37312)
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:34:17 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 0.2ms | Allocations: 653)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2161)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:34:17 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 0.2ms | Allocations: 652)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1930)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search" for 127.0.0.1 at 2024-03-18 04:34:48 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 578)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 32301)
+Completed 200 OK in 51ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 37389)
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:34:48 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 0.2ms | Allocations: 653)
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2161)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news?q=iterate.ai&commit=Search&i=0" for 127.0.0.1 at 2024-03-18 04:34:48 -0600
+Processing by NewsController#index as HTML
+  Parameters: {"q"=>"iterate.ai", "commit"=>"Search", "i"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 0.2ms | Allocations: 652)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1930)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
