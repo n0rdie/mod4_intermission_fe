@@ -1,0 +1,7 @@
+<h1><%= @hash[:foodSearchCriteria][:query] %></h1>
+<h5><%= @hash[:totalHits] %> results</h5>
+<% for i in 0..9 do %>
+    <h3><%= @hash[:foods][i][:brandName] %> <%= @hash[:foods][i][:description] %></h3>
+    <h5>GTIN/UPC code: <%= @hash[:foods][i][:gtinUpc] %></h5>
+    <h5>Ingredients: <%= @hash[:foods][i][:ingredients] %></h5>
+<% end %>
