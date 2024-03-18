@@ -40,7 +40,9 @@ RSpec.describe "News" do #, type: :feature do
         visit '/news?q=iterate.ai&commit=Search&i=0'
         
         # title
-        expect(page).to have_link('What CIOs Should Consider When Exploring Generative AI')        
+        expect(page).to have_link('What CIOs Should Consider When Exploring Generative AI')
+        expect(page).to_not have_link('Software To Hardware: How To Shift To Building Physical Tech')
+        expect(page).to_not have_link("Intel pousse ses Xeon pour faire de l'inférence auprès des entreprises")        
         # source
         expect(page).to have_content('Forbes')
         # datetime
