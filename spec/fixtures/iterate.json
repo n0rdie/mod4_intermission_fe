@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 3,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Brian Sathianathan, Forbes Councils Member, \n Brian Sathianathan, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/briansathianathan/",
+            "title": "What CIOs Should Consider When Exploring Generative AI",
+            "description": "It's important for CIOs today to strategically address the impact of AI on the workforce.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2024/03/14/what-cios-should-consider-when-exploring-generative-ai/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/640f2ca26c680dae90216405/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+            "publishedAt": "2024-03-14T10:30:00Z",
+            "content": "Co-Founder/Chief Digital Officer at Iterate.ai, overseeing technology platforms and innovation strategy.\r\ngetty\r\nIn 2024, generative AI presents a wide range of opportunities and considerations that … [+6229 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Expert Panel®, Forbes Councils Member, \n Expert Panel®, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/expertpanel/",
+            "title": "Software To Hardware: How To Shift To Building Physical Tech",
+            "description": "If your team is new to the hardware and manufacturing sectors, it’s essential to diligently research what’s in store before moving from the drawing board to development.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2024/03/12/software-to-hardware-how-to-shift-to-building-physical-tech/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/61bb4d121545a46e8801f125/0x0.jpg?format=jpg&crop=2484,1398,x0,y257,safe&height=900&width=1600&fit=bounds",
+            "publishedAt": "2024-03-12T15:15:08Z",
+            "content": "getty\r\nEven when you start with a genuinely great idea, moving from software development to designing and building physical tech products isnt a simple shift. It not only requires your team to learn … [+9733 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Usine-digitale.fr"
+            },
+            "author": "Célia Séramour",
+            "title": "Intel pousse ses Xeon pour faire de l'inférence auprès des entreprises",
+            "description": "Pour Intel, pas besoin de débourser des milliards en GPU pour devenir une \"entreprise d'IA\". Ses CPU pour serveurs Xeon de nouvelle génération disposent de performances d'inférence suffisantes pour de nombreux cas d'usage. Il met en avant des noms bien connus…",
+            "url": "https://www.usine-digitale.fr/article/intel-pousse-ses-xeon-pour-faire-de-l-inference-aupres-des-entreprises.N2208287",
+            "urlToImage": "https://www.usine-digitale.fr/mediatheque/5/8/8/001506885_896x598_c.jpg",
+            "publishedAt": "2024-02-25T18:00:00Z",
+            "content": "Personne ne dira le contraire : Intel a raté la vague de l'intelligence artificielle qui a déferlé sur l'industrie des semi-conducteurs ces dix dernières années, malgré un certain nombre d'efforts en… [+5126 chars]"
+        }
+    ]
+}
